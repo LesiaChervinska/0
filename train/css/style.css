@@ -1,0 +1,233 @@
+/* Локальне підключення шрифтів */
+
+
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+	max-width: 1250px;
+	background-color: #d6b5b54f;
+	padding: 0 10px;
+	margin: 0 auto;
+	border: 1px dotted red;
+}
+.top{
+	padding: 20px 0 0 0;
+}
+
+.top >*{
+	margin-bottom: 15px;
+	border-bottom: 1px solid black;
+}
+.title{
+	margin-bottom: 30px;
+	font-weight: 700;
+}
+.title:hover::after{
+	content: "****";
+	padding-left: 5px;
+}
+.item::before{
+	content: "";
+	width: 15px;
+	height: 15px;
+	margin-right: 10px;
+	vertical-align: middle;
+	background-image: url("../img/IMG_20240404_190311.jpg");
+}
+
+.item:hover::after{
+	content: "";
+	width: 15px;
+	height: 15px;
+	margin-left: 10px;
+	vertical-align: middle;
+	background-image: url("../img/free-icon-font-cross-17593954.svg");
+
+}
+.list li:not(:last-child){
+	margin-bottom: 15px;
+}
+
+.top >*:last-child{
+	margin-bottom: 0;
+} 
+.link{
+	background-color: #99ac7b;
+	text-transform: uppercase;
+	color: #1b1414;
+	padding: 10px 20px;
+	border-radius: 8px;
+	margin-bottom: 30px;
+}
+.link:hover{
+	background-color: #99ac7b3b;
+	box-shadow: 2px 2px 13px #f15858;
+}
+	
+.link:active{
+	background-color: #e70e0e;
+	color:aqua;
+}
+.link:visited{
+	background-color: #019c16;
+}
+.link:focus{
+	border: 3px solid red;
+}
+
+.top h2:first-of-type{
+	color:red;
+}
+
+.top li:first-child{
+	color:red;
+}
+.top li:last-child{
+	color:rgb(0, 255, 128);
+}
+.list :not(:nth-child(4n + 3)){
+	background: #d10909;
+}
+
+ul:has(.item2){
+	color: #99ac7b;
+}
+
+/*******************************************************/
+.game-box{
+	width: 600px;
+	height: 600px;
+	border: 2px solid rgba(36, 26, 26, 0.404);
+	margin: 0 auto;
+}
+
+.one{
+	width: 150px;
+	height: 50px;
+	background-color: #c3df25;
+	margin: 0 auto;
+
+}
+.one::after{
+	content: "получи свой приз";
+
+}
+.two{
+	width: 200px;
+	height: 30px;
+	background-color: #109ddf;
+	margin: 0 0 0 123px;
+	visibility: hidden;
+}
+
+ .three{
+	width: 30px;
+	height: 150px;
+	background-color: #0fd841;
+	margin: 0 0 0 123px;
+	visibility: hidden;
+ }
+
+ .fourth{
+	width: 230px;
+	height: 15px;
+	background-color: #0cb1c7;
+	margin: 0 0 0 123px;
+	visibility: hidden;
+ }
+ .five{
+	width: 30px;
+	height: 15px;
+	background-color: #2bc70c;
+	margin: 0 0 0 334px;
+	visibility: hidden;
+ }
+ .six{
+	width: 150px;
+	height: 15px;
+	background-color: #ffc505;
+	margin: 0 0 0 347px;
+	visibility: hidden;
+ }
+ .seven{
+	width: 20px;
+	height: 150px;
+	background-color: #554864;
+	margin: 0 0 0 477px;
+	visibility: hidden;
+ }
+ .eight{
+	width: 74px;
+	height: 30px;
+	text-shadow: 2px 2px 31px  red;
+	margin: 0 0 0 440px;
+	visibility: hidden;
+
+ }
+
+
+ 
+ .eight::before{
+	content: "Дай жене денег на карман)";
+
+ }
+.eight img {
+    width: 260px;
+    height: auto;
+    margin-top: -322px;
+    margin-left: -300px;
+	transform: rotate(-10deg);
+}
+
+.one:hover + .two{
+	visibility: visible;
+}
+.two:hover.two{
+	visibility: visible;
+}
+.two:hover + .three{
+	visibility: visible;
+}
+
+.three:hover.three{
+	visibility: visible;
+}
+
+.three:hover + .fourth{
+	visibility: visible;
+}
+.fourth:hover.fourth{
+	visibility: visible;
+}
+ 
+.fourth:hover +.five{
+	visibility: visible;
+}
+.fourth:hover.five{
+	visibility: visible;
+}
+
+.five:hover + .six{
+	visibility: visible;
+}
+.five:hover.five{
+	visibility: visible;
+}
+.six:hover + .seven{
+	visibility: visible;
+}
+.six:hover.six{
+visibility: visible;
+}
+
+.seven:hover +.eight{
+	visibility: visible;
+}
+.seven:hover.seven{
+	visibility: visible;
+}
+
+
+
